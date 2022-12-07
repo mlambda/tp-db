@@ -7,17 +7,20 @@ readme = "README.md"
 version = "0.1.0"
 
 [tool.poetry.dependencies]
+SQLAlchemy = "^1.4.44"
 python = "^3.8.1"
+pytz = "^2022.6"
 
 [tool.poetry.group.dev.dependencies]
+SQLAlchemy = {extras = ["mypy"], version = "^1.4.44"}
 black = "^22.10.0"
 flake8 = "^6.0.0"
 flake8-bugbear = "^22.10.27"
-flake8-docstrings = "^1.6.0"
 isort = "^5.10.1"
 mypy = "^0.991"
 pylint = "^2.15.6"
 pytest = "^7.2.0"
+types-pytz = "^2022.6.0.1"
 
 [tool.isort]
 profile = "black"
